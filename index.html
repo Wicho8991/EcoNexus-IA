@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoNexus IA</title>
+
+  <style>
+    body{
+      margin:0;
+      font-family: Arial, sans-serif;
+      background:#a8c98d;
+    }
+
+    /* Barra lateral */
+    .sidebar{
+      width:180px;
+      height:100vh;
+      background:#dfead6;
+      position:fixed;
+      left:0;
+      top:0;
+      padding:20px;
+      box-sizing:border-box;
+    }
+
+    .sidebar h3{
+      margin-top:0;
+    }
+
+    .menu{
+      margin-top:40px;
+    }
+
+    .menu p{
+      margin:18px 0;
+      font-size:15px;
+      cursor:pointer;
+    }
+
+    /* Parte superior derecha */
+    .top-icons{
+      position:absolute;
+      top:20px;
+      right:30px;
+      font-size:28px;
+    }
+
+    .top-icons span{
+      margin-left:15px;
+      cursor:pointer;
+    }
+
+    /* Contenido principal */
+    .main{
+      margin-left:200px;
+      text-align:center;
+      padding-top:80px;
+    }
+
+    .logo{
+      width:250px;
+      height:210px;
+      background:#4a9448;
+      margin:0 auto;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      font-size:40px;
+      font-weight:bold;
+      border-radius:5px;
+    }
+
+    .subtitle{
+      margin-top:25px;
+      font-size:36px;
+      font-style:italic;
+      font-weight:bold;
+      color:black;
+    }
+
+    .text{
+      margin-top:20px;
+      font-size:24px;
+      line-height:1.5;
+      color:white;
+      font-weight:bold;
+    }
+
+    .orange{
+      color:orange;
+    }
+
+    .blue{
+      color:#42b6ff;
+    }
+
+    .yellow{
+      color:#ffd54f;
+    }
+
+    /* Caja de búsqueda */
+    .search-box{
+      margin:40px auto;
+      width:70%;
+    }
+
+    .search-box input{
+      width:100%;
+      padding:15px;
+      border:none;
+      border-radius:6px;
+      font-size:18px;
+    }
+
+    /* Botones inferiores */
+    .buttons{
+      margin-top:15px;
+    }
+
+    .buttons button{
+      padding:10px 14px;
+      margin:0 5px;
+      border:none;
+      background:white;
+      cursor:pointer;
+      border-radius:4px;
+      font-size:18px;
+    }
+
+    /* Créditos */
+    .credits{
+      margin-top:80px;
+      font-size:14px;
+      color:black;
+      font-weight:bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Barra lateral -->
+  <div class="sidebar">
+
+    <div class="menu">
+      <p>➕ Nuevo chat</p>
+      <p>🔍 Buscar chats</p>
+      <a href="aplicaciones.html"><p>🛠 Aplicaciones</p></a>
+      <a href="avanzado.html"><p>⚙ Avanzado</p></a>
+      <a href="salud.html"><p>🖤 Salud</p></a>
+    </div>
+  </div>
+
+  <!-- Iconos superiores -->
+  <div class="top-icons">
+    <a href="usuario.html"><span>👤</span></a>
+    <a href="configuracion.html"><span>⚙</span></a>
+  </div>
+
+  <!-- Contenido principal -->
+  <div class="main">
+
+    <!-- Logo -->
+    <div class="logo">
+      <img src="Captura.PNG" width="300" height="250">
+    </div>
+
+    <!-- Texto -->
+    <div class="subtitle">
+      Sabías que...
+    </div>
+
+    <div class="text">
+      Reciclar una sola lata de 
+      <span class="orange">aluminio</span>
+      puede ahorrar suficiente 
+      <span class="blue">energía</span>
+      para mantener encendido un televisor durante unas 
+      <span class="yellow">3 horas.</span>
+    </div>
+
+    <!-- Buscador -->
+    <div class="search-box">
+      <input type="text" placeholder="Pregunta lo que quieras...">
+
+      <div class="buttons">
+        <button>📎</button>
+        <button>🎤</button>
+        <button>🖼</button>
+      </div>
+    </div>
+
+    <!-- Créditos -->
+    <div class="credits">
+      Peña Catalina Brandon, Ochoa Mendoza Jesús, Meléndez Fernández David
+    </div>
+
+  </div>
+
+</body>
+</html>

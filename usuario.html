@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Usuario</title>
+
+  <style>
+    body{
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #b7f7c4, #d8ffe1);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+
+    .contenedor{
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 15px;
+      width: 320px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.15);
+      border: 2px solid #b7f7c4;
+    }
+
+    h2{
+      text-align: center;
+      margin-bottom: 20px;
+      color: #2e7d32;
+    }
+
+    input{
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #a5d6a7;
+      border-radius: 8px;
+      font-size: 15px;
+      background: #f1fff4;
+    }
+
+    input:focus{
+      outline: none;
+      border-color: #66bb6a;
+      box-shadow: 0 0 5px #81c784;
+    }
+
+    button{
+      width: 100%;
+      padding: 12px;
+      background: #81c784;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover{
+      background: #66bb6a;
+    }
+
+    .mensaje{
+      margin-top: 15px;
+      text-align: center;
+      color: #2e7d32;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="contenedor">
+    <h2>Crear Usuario</h2>
+
+    <form id="registroForm">
+      <input type="text" id="usuario" placeholder="Nombre de usuario" required>
+
+      <input type="email" id="correo" placeholder="Correo electrónico" required>
+
+      <input type="password" id="password" placeholder="Contraseña" required>
+
+      <button type="submit">Registrarse</button>
+    </form>
+
+    <div class="mensaje" id="mensaje"></div>
+  </div>
+
+  <script>
+    const formulario = document.getElementById("registroForm");
+    const mensaje = document.getElementById("mensaje");
+
+    formulario.addEventListener("submit", function(event){
+      event.preventDefault();
+
+      let usuario = document.getElementById("usuario").value;
+
+      mensaje.innerHTML = "✅ Usuario '" + usuario + "' creado correctamente";
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Configuración</title>
+
+    <style>
+
+        body{
+            background-color: #d8ffe1;
+            font-family: Arial;
+        }
+
+        .contenedor{
+            background-color: white;
+            width: 400px;
+            margin: auto;
+            margin-top: 50px;
+            padding: 20px;
+            border-radius: 15px;
+            border: 2px solid lightgreen;
+        }
+
+        h1{
+            text-align: center;
+            color: green;
+        }
+
+        .opcion{
+            background-color: #f0fff0;
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        p{
+            margin: 0;
+            margin-bottom: 8px;
+        }
+
+        select{
+            width: 100%;
+            height: 35px;
+        }
+
+        button{
+            width: 100%;
+            height: 40px;
+            margin-top: 20px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+
+        button:hover{
+            background-color: darkgreen;
+        }
+
+        #mensaje{
+            text-align: center;
+            color: green;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <h1>⚙ Configuración</h1>
+
+        <div class="opcion">
+
+            <p>Tema oscuro</p>
+
+            <select>
+                <option>Si</option>
+                <option>No</option>
+            </select>
+
+        </div>
+
+        <div class="opcion">
+
+            <p>Activar micrófono</p>
+
+            <select>
+                <option>Si</option>
+                <option>No</option>
+            </select>
+
+        </div>
+
+        <div class="opcion">
+
+            <p>Activar cámara</p>
+
+            <select>
+                <option>Si</option>
+                <option>No</option>
+            </select>
+
+        </div>
+
+        <div class="opcion">
+
+            <p>Color de la página</p>
+
+            <select>
+                <option>Verde claro</option>
+                <option>Blanco</option>
+                <option>Azul</option>
+            </select>
+
+        </div>
+
+        <div class="opcion">
+
+            <p>Tamaño de letra</p>
+
+            <select>
+                <option>Pequeña</option>
+                <option selected>Normal</option>
+                <option>Grande</option>
+            </select>
+
+        </div>
+
+        <button onclick="guardarCambios()">
+            Guardar cambios
+        </button>
+
+        <div id="mensaje"></div>
+
+    </div>
+
+    <script>
+
+        function guardarCambios(){
+
+            document.getElementById("mensaje").innerHTML =
+            "✅ Los cambios fueron guardados";
+
+        }
+
+    </script>
+
+</body>
+</html>
